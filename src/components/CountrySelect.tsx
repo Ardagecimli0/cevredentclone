@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactCountryFlag from "react-country-flag";
 import {
     Select,
@@ -244,31 +244,44 @@ interface CountrySelectProps {
 }
 
 const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, className }) => {
-    const selectedCountry = countries.find(c => c.dialCode === value) || countries[0];
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         // Fetch country based on IP only if value is not already set
         if (!value) {
             const fetchCountryByIP = async () => {
                 try {
-                    const response = await fetch("http://ip-api.com/json/?fields=countryCode");
-                    const data = await response.json();
+                    const response = await fetch("https://ipapi.co/country_code/");
+                    const countryCode = await response.text();
 
-                    if (data.countryCode) {
+                    if (countryCode && countryCode.length === 2) {
                         // Find the country in our list by country code
-                        const detectedCountry = countries.find(c => c.code === data.countryCode);
+                        const detectedCountry = countries.find(c => c.code === countryCode.trim());
                         if (detectedCountry) {
                             onChange(detectedCountry.dialCode);
+                        } else {
+                            // Fallback to Turkey if country not found
+                            onChange('+90');
                         }
+                    } else {
+                        // Fallback to Turkey
+                        onChange('+90');
                     }
                 } catch (error) {
                     console.error('Failed to fetch country by IP:', error);
+                    // Fallback to Turkey on error
+                    onChange('+90');
                 }
+                setIsLoading(false);
             };
 
             fetchCountryByIP();
+        } else {
+            setIsLoading(false);
         }
-    }, [value, onChange]);
+    }, []);
+
+    const selectedCountry = countries.find(c => c.dialCode === value) || countries.find(c => c.code === 'TR')!;
 
     return (
         <Select
