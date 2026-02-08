@@ -17,25 +17,8 @@ const WhyChooseUs = () => {
 
   const [loading, setLoading] = useState(false);
 
-  // Map language to country code for default selection
-  const getInitialPhoneCode = (lang: string) => {
-    const map: Record<string, string> = {
-      en: '+44', // Defaulting EN to UK
-      tr: '+90',
-      de: '+49',
-      fr: '+33',
-      es: '+34',
-      it: '+39',
-      ru: '+7',
-    };
-    return map[lang] || '+44';
-  };
-
-  const [formCountry, setFormCountry] = useState(getInitialPhoneCode(i18n.language));
-
-  useEffect(() => {
-    setFormCountry(getInitialPhoneCode(i18n.language));
-  }, [i18n.language]);
+  // Initial state is empty to allow IP-based detection in CountrySelect
+  const [formCountry, setFormCountry] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

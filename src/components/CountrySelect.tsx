@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactCountryFlag from "react-country-flag";
 import {
     Select,
@@ -245,6 +245,30 @@ interface CountrySelectProps {
 
 const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, className }) => {
     const selectedCountry = countries.find(c => c.dialCode === value) || countries[0];
+
+    useEffect(() => {
+        // Fetch country based on IP only if value is not already set
+        if (!value) {
+            const fetchCountryByIP = async () => {
+                try {
+                    const response = await fetch("http://ip-api.com/json/?fields=countryCode");
+                    const data = await response.json();
+
+                    if (data.countryCode) {
+                        // Find the country in our list by country code
+                        const detectedCountry = countries.find(c => c.code === data.countryCode);
+                        if (detectedCountry) {
+                            onChange(detectedCountry.dialCode);
+                        }
+                    }
+                } catch (error) {
+                    console.error('Failed to fetch country by IP:', error);
+                }
+            };
+
+            fetchCountryByIP();
+        }
+    }, [value, onChange]);
 
     return (
         <Select

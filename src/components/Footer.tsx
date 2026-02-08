@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center gap-8 text-center">
 
           {/* 1. Logo */}
-          <img src={logo} alt="CevreDent" className="h-24 w-auto" />
+          <img src={logo} alt="CevreDent" className="h-14 w-auto" />
 
           {/* 2. Contact Info - Vertical with Icons */}
           <div className="flex flex-col items-center gap-4">

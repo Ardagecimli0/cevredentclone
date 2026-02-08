@@ -41,7 +41,7 @@ const Header = () => {
 
           {/* Logo - Centered on Mobile, Left on Desktop */}
           <a href="/" className="flex items-center -translate-x-2 lg:translate-x-0">
-            <img src={logo} alt="CevreDent" className="h-16 md:h-20 w-auto transition-all duration-300" />
+            <img src={logo} alt="CevreDent" className="h-10 md:h-12 w-auto transition-all duration-300" />
           </a>
 
           {/* Desktop Navigation */}
