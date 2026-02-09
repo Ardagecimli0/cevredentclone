@@ -195,6 +195,6 @@ export const tr = {
     socialMedia: 'Sosyal Medya Hesaplarımız',
   },
   site: {
-    title: 'CevreDent - Türkiye\'de Diş Kliniği',
+    title: 'CevreDent Diş Kliniği',
   },
 };
