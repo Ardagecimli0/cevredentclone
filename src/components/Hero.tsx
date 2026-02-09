@@ -56,8 +56,6 @@ const Hero = () => {
 
           <motion.a
             href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
-            target="_blank"
-            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg shadow-dental hover:shadow-dental-lg transition-all duration-300"

@@ -29,33 +29,44 @@ const WhyChooseUs = () => {
       value = value.substring(1);
     }
 
-    // Kural 3: Türkiye (+90) seçili ise '5' ile başlamasını zorunlu tut
-    if (formCountry === '+90' && value.length > 0 && value[0] !== '5') {
-      return; // 5 ile başlamıyorsa girişi reddet
-    }
+    // Kural 3: Ülke Bazlı Özel Başlangıç Kontrolleri (Validation on entry)
+    if (formCountry === '+90' && value.length > 0 && value[0] !== '5') return; // Türkiye: '5' ile başlamalı
+    if (formCountry === '+7' && value.length > 0 && value[0] !== '9') return;  // Rusya: Genelde '9' ile başlar
+    if (formCountry === '+39' && value.length > 0 && value[0] !== '3') return; // İtalya: Genelde '3' ile başlar
 
-    // Kural 4: Türkiye formatı için 10 hane sınırı
-    if (formCountry === '+90' && value.length > 10) {
-      value = value.substring(0, 10);
-    }
+    // Kural 4: Ülke Bazlı Hane Sınırları (MaxLength)
+    if (formCountry === '+90' && value.length > 10) value = value.substring(0, 10);
+    if (formCountry === '+7' && value.length > 10) value = value.substring(0, 10);
+    if (formCountry === '+39' && value.length > 10) value = value.substring(0, 10);
+    if (formCountry === '+49' && value.length > 11) value = value.substring(0, 11);
 
     setFormData({ ...formData, phone: value });
 
-    // Görsel Geri Bildirim: TR için 10 haneden azsa hata göster
-    if (formCountry === '+90') {
-      setPhoneError(value.length > 0 && value.length < 10);
-    } else {
-      setPhoneError(value.length > 0 && value.length < 7); // Diğer ülkeler için min 7 hane
+    // Görsel Geri Bildirim
+    const phoneLength = value.length;
+    let isError = false;
+    if (phoneLength > 0) {
+      if (formCountry === '+90') isError = phoneLength < 10;
+      else if (formCountry === '+7') isError = phoneLength < 10;
+      else if (formCountry === '+39') isError = phoneLength < 9;
+      else if (formCountry === '+49') isError = phoneLength < 10;
+      else isError = phoneLength < 7;
     }
+    setPhoneError(isError);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Geçerli numara kontrolü (Validation)
-    const isTurkey = formCountry === '+90';
     const phoneLength = formData.phone.length;
-    const isValid = isTurkey ? phoneLength === 10 : (phoneLength >= 7 && phoneLength <= 15);
+    let isValid = false;
+
+    // Ülke Bazlı Kesin Doğrulama
+    if (formCountry === '+90') isValid = phoneLength === 10;
+    else if (formCountry === '+7') isValid = phoneLength === 10;
+    else if (formCountry === '+39') isValid = phoneLength >= 9 && phoneLength <= 10;
+    else if (formCountry === '+49') isValid = phoneLength >= 10 && phoneLength <= 11;
+    else isValid = phoneLength >= 7 && phoneLength <= 15;
 
     if (!isValid) {
       setPhoneError(true);

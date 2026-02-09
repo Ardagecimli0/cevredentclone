@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center gap-8 text-center">
 
           {/* 1. Logo */}
-          <img src={logo} alt="CevreDent" className="h-14 w-auto" />
+          <img src={logo} alt="CevreDent" className="h-10 md:h-14 w-auto" />
 
           {/* 2. Contact Info - Vertical with Icons */}
           <div className="flex flex-col items-center gap-4">
@@ -40,7 +40,6 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/cevredent/"
-                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dental-navy transition-all duration-300"
               >
@@ -50,7 +49,6 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/cevredent/"
-                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dental-navy transition-all duration-300"
               >
@@ -60,7 +58,6 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.tiktok.com/@cevredent"
-                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dental-navy transition-all duration-300"
               >

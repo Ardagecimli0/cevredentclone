@@ -42,8 +42,6 @@ const Services = () => {
         <div className="absolute bottom-0 left-0 right-0">
           <a
             href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
-            target="_blank"
-            rel="noopener noreferrer"
             className="block bg-dental-navy text-white text-center py-3 px-4 font-bold text-lg hover:bg-primary transition-colors"
           >
             {t(`services.${service.key}.title`)}
@@ -65,8 +63,6 @@ const Services = () => {
                     <ChevronRight className="w-5 h-5 text-gray-400 shrink-0 mt-0.5" />
                     <a
                       href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="text-sm text-dental-navy hover:text-primary underline"
                     >
                       {item}
@@ -88,8 +84,6 @@ const Services = () => {
         >
           <a
             href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             {t('services.getMoreInfo')}
           </a>
