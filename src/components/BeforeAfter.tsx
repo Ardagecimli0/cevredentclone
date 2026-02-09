@@ -22,7 +22,7 @@ import ba8 from '@/assets/bfafter/8.png';
 
 const BeforeAfter = () => {
   const { t } = useTranslation();
-  const [api, setApi] = useState < CarouselApi > ();
+  const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 

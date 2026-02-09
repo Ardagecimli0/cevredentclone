@@ -87,11 +87,11 @@ const Packages = () => {
             className="bg-[#1e1e3f] hover:bg-[#1e1e3f]/90 text-white min-w-[200px]"
           >
             <a
-              href="https://wa.me/905494755287?text=Can%20i%20have%20more%20information%20about%20dental%20treatments%20and%20prices%3F"
+              href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get Price Information
+              {t('packages.cta')}
             </a>
           </Button>
         </div>

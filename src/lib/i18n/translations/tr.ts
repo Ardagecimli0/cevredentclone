@@ -63,11 +63,13 @@ export const tr = {
     },
     hollywoodSmile: {
       title: 'Hollywood Smile',
-      description: 'Gelişmiş tekniklerimiz ve uzmanlığımızla dönüştürücü bir gülüş yenileme deneyimleyin.',
+      subtitle: 'Hollywood Smile Paketlerimiz:',
+      items: ['Porselen Kaplamalar', 'Laminat Kaplamalar', 'Diş Beyazlatma', 'Diş Eti Estetiği'],
     },
     restorativeDentistry: {
       title: 'Restoratif Diş Hekimliği',
-      description: 'Diş implantları, kronlar, köprüler veya diğer restoratif işlemlere ihtiyacınız olsun, doğal sonuçlar üreten kapsamlı çözümler sunuyoruz.',
+      subtitle: 'Restoratif Çözümlerimiz:',
+      items: ['Diş Köprüleri', 'Porselen Dolgular', 'Kompozit Dolgular', 'Hassas Tutuculu Protezler'],
     },
     getMoreInfo: 'Daha Fazla Bilgi',
     packages: {

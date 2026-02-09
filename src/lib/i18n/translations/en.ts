@@ -63,11 +63,13 @@ export const en = {
     },
     hollywoodSmile: {
       title: 'Hollywood Smile',
-      description: 'Experience a transformative smile makeover with our advanced techniques and expertise. Enjoy a smooth and comfortable Hollywood Smile Turkey Recovery process, ensuring your well-being throughout.',
+      subtitle: 'Our Hollywood Smile Packages:',
+      items: ['Porcelain Veneers', 'Laminate Veneers', 'Teeth Whitening', 'Gum Contouring'],
     },
     restorativeDentistry: {
       title: 'Restorative Dentistry',
-      description: 'Regardless of whether you need dental implants, crowns, bridges, or other restorative procedures, we offer complete solutions that produce results that seem natural.',
+      subtitle: 'Our Restorative Solutions:',
+      items: ['Dental Bridges', 'Porcelain Fillings', 'Composite Fillings', 'Precision Attachments'],
     },
     getMoreInfo: 'Get More Information',
     packages: {

@@ -18,8 +18,8 @@ const Services = () => {
   ];
 
   const bottomServices = [
-    { key: 'hollywoodSmile', image: patient4, hasPackages: false },
-    { key: 'restorativeDentistry', image: patient5, hasPackages: false },
+    { key: 'hollywoodSmile', image: patient4, hasPackages: true },
+    { key: 'restorativeDentistry', image: patient5, hasPackages: true },
   ];
 
   const ServiceCard = ({ service, index }: { service: typeof topServices[0]; index: number }) => (
@@ -40,9 +40,14 @@ const Services = () => {
           />
         </div>
         <div className="absolute bottom-0 left-0 right-0">
-          <div className="bg-dental-navy text-white text-center py-3 px-4 font-bold text-lg">
+          <a
+            href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-dental-navy text-white text-center py-3 px-4 font-bold text-lg hover:bg-primary transition-colors"
+          >
             {t(`services.${service.key}.title`)}
-          </div>
+          </a>
         </div>
       </div>
 
@@ -59,7 +64,7 @@ const Services = () => {
                   <li key={i} className="flex items-start gap-2 text-left justify-center">
                     <ChevronRight className="w-5 h-5 text-gray-400 shrink-0 mt-0.5" />
                     <a
-                      href="https://wa.me/905494755287?text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+                      href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-dental-navy hover:text-primary underline"
@@ -82,7 +87,7 @@ const Services = () => {
           className="bg-[#1e1e3f] hover:bg-[#1e1e3f]/90 text-white"
         >
           <a
-            href="https://wa.me/905494755287?text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+            href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
             target="_blank"
             rel="noopener noreferrer"
           >
