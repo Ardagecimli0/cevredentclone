@@ -26,13 +26,26 @@ const WhyChooseUs = () => {
 
     try {
       // Prepare the data to send to the API
+      // Map language code to full English name for Zoho
+      const languageMap: Record<string, string> = {
+        en: 'English',
+        tr: 'Turkish',
+        de: 'German',
+        fr: 'French',
+        es: 'Spanish',
+        ru: 'Russian',
+        it: 'Italian'
+      };
+
+      const currentLang = languageMap[i18n.language] || 'English';
+
       const payload = {
         name: formData.name,
         phone: `${formCountry}${formData.phone}`,
         email: formData.email,
         lead_source: "Google/Web Form",
-        language: "TR",
-        source_language: "TR",
+        language: currentLang,
+        source_language: currentLang,
         ip: "",
         doctor: "CevreDent",
         interest: ["Dental"],

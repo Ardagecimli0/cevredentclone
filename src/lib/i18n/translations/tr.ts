@@ -99,6 +99,7 @@ export const tr = {
   },
   beforeAfter: {
     title: 'Önce & Sonra',
+    badge: 'Geçici Gülüş Tasarımı',
     cta: 'En İyi Diş Tedavisini Alın',
   },
   packages: {
@@ -143,6 +144,15 @@ export const tr = {
   clinic: {
     title: 'Kliniğimizi Fotoğraflarla Keşfedin',
   },
+  discoverOur: {
+    title: 'Kliniğimizi Fotoğraflarla Keşfedin',
+  },
+  contactUs: {
+    title: 'Ücretsiz Online Danışma',
+    subtitle: 'Sanal Danışma:',
+    description: 'Kişiselleştirilmiş bir ameliyat öncesi görüşme için bizimle bağlantı kurun',
+    button: 'Bize Ulaşın',
+  },
   influencers: {
     title: 'Youtube Influencer Videoları',
   },
@@ -179,5 +189,6 @@ export const tr = {
     copyright: '© 2024 CevreDent Kliniği. Tüm hakları saklıdır.',
     privacy: 'Gizlilik Politikası',
     terms: 'Kullanım Koşulları',
+    socialMedia: 'Sosyal Medya Hesaplarımız',
   },
 };

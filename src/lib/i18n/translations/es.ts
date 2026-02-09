@@ -63,16 +63,19 @@ export const es = {
     },
     hollywoodSmile: {
       title: 'Sonrisa Hollywood',
-      description: 'Experimenta un cambio de sonrisa transformador con nuestras técnicas avanzadas y experiencia.',
+      subtitle: 'Nuestros Paquetes Sonrisa Hollywood:',
+      items: ['Carillas de Porcelana', 'Carillas Laminadas', 'Blanqueamiento Dental', 'Contorneado de Encías'],
     },
     restorativeDentistry: {
       title: 'Odontología Restauradora',
-      description: 'Ya sea que necesites implantes dentales, coronas, puentes u otros procedimientos restauradores, ofrecemos soluciones completas con resultados naturales.',
+      subtitle: 'Nuestras Soluciones Restauradoras:',
+      items: ['Puentes Dentales', 'Empastes de Porcelana', 'Empastes de Composite', 'Ataches de Precisión'],
     },
     getMoreInfo: 'Más Información',
   },
   beforeAfter: {
     title: 'Antes y Después',
+    badge: 'Sonrisa Instantánea',
     cta: 'Obtén el Mejor Tratamiento Dental',
   },
   packages: {
@@ -117,6 +120,15 @@ export const es = {
   clinic: {
     title: 'Descubre Nuestra Clínica en Fotos',
   },
+  discoverOur: {
+    title: 'Descubre Nuestra Clínica en Fotos',
+  },
+  contactUs: {
+    title: 'Consulta Online Gratuita',
+    subtitle: 'Consulta Virtual:',
+    description: 'Conéctate con nosotros antes de tu cirugía para una reunión preoperatoria personalizada',
+    button: 'Contáctanos',
+  },
   influencers: {
     title: 'Videos de Influencers de Youtube',
   },
@@ -153,5 +165,6 @@ export const es = {
     copyright: '© 2024 Clínica CevreDent. Todos los derechos reservados.',
     privacy: 'Política de Privacidad',
     terms: 'Términos de Servicio',
+    socialMedia: 'Nuestras Redes Sociales',
   },
 };

@@ -63,16 +63,19 @@ export const it = {
     },
     hollywoodSmile: {
       title: 'Hollywood Smile',
-      description: 'Vivi un rifacimento del sorriso trasformativo con le nostre tecniche avanzate e la nostra esperienza.',
+      subtitle: 'I Nostri Pacchetti Hollywood Smile:',
+      items: ['Faccette in Porcellana', 'Faccette Laminate', 'Sbiancamento Dentale', 'Estetica Gengivale'],
     },
     restorativeDentistry: {
       title: 'Odontoiatria Restaurativa',
-      description: 'Che tu abbia bisogno di impianti, corone, ponti o altre procedure restaurative, offriamo soluzioni complete con risultati naturali.',
+      subtitle: 'Le Nostre Soluzioni Restaurative:',
+      items: ['Ponti Dentali', 'Otturazioni in Porcellana', 'Otturazioni in Composito', 'Attacchi di Precisione'],
     },
     getMoreInfo: 'Maggiori Informazioni',
   },
   beforeAfter: {
     title: 'Prima e Dopo',
+    badge: 'Sorriso Istantaneo',
     cta: 'Ottieni il Miglior Trattamento Dentale',
   },
   packages: {
@@ -117,6 +120,15 @@ export const it = {
   clinic: {
     title: 'Scopri la Nostra Clinica in Foto',
   },
+  discoverOur: {
+    title: 'Scopri la Nostra Clinica in Foto',
+  },
+  contactUs: {
+    title: 'Consulenza Online Gratuita',
+    subtitle: 'Consulenza Virtuale:',
+    description: 'Connettiti con noi prima dell\'intervento per un incontro pre-operatorio personalizzato',
+    button: 'Contattaci',
+  },
   influencers: {
     title: 'Video degli Influencer di Youtube',
   },
@@ -153,5 +165,6 @@ export const it = {
     copyright: '© 2024 Clinica CevreDent. Tutti i diritti riservati.',
     privacy: 'Informativa sulla Privacy',
     terms: 'Termini di Servizio',
+    socialMedia: 'I Nostri Social Media',
   },
 };

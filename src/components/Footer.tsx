@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* 3. Social Media Section */}
           <div className="flex flex-col items-center gap-4 mt-4">
-            <h3 className="text-2xl font-medium">Our Social Media</h3>
+            <h3 className="text-2xl font-medium">{t('footer.socialMedia')}</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/cevredent/"

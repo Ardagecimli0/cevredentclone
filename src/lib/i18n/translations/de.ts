@@ -63,16 +63,19 @@ export const de = {
     },
     hollywoodSmile: {
       title: 'Hollywood Smile',
-      description: 'Erleben Sie eine transformative Lächeln-Verjüngung mit unseren fortschrittlichen Techniken und Expertise.',
+      subtitle: 'Unsere Hollywood Smile Pakete:',
+      items: ['Porzellan Veneers', 'Laminat Veneers', 'Zahnaufhellung', 'Zahnfleischkorrektur'],
     },
     restorativeDentistry: {
       title: 'Restaurative Zahnmedizin',
-      description: 'Ob Zahnimplantate, Kronen, Brücken oder andere restaurative Verfahren - wir bieten komplette Lösungen mit natürlichen Ergebnissen.',
+      subtitle: 'Unsere restaurativen Lösungen:',
+      items: ['Zahnbrücken', 'Porzellanfüllungen', 'Kompositfüllungen', 'Präzisionsverankerungen'],
     },
     getMoreInfo: 'Mehr Informationen',
   },
   beforeAfter: {
     title: 'Vorher & Nachher',
+    badge: 'Snap-on Lächeln',
     cta: 'Die beste Zahnbehandlung erhalten',
   },
   packages: {
@@ -117,6 +120,15 @@ export const de = {
   clinic: {
     title: 'Entdecken Sie unsere Klinik in Bildern',
   },
+  discoverOur: {
+    title: 'Entdecken Sie unsere Klinik in Bildern',
+  },
+  contactUs: {
+    title: 'Kostenlose Online-Beratung',
+    subtitle: 'Virtuelle Beratung:',
+    description: 'Verbinden Sie sich mit uns vor Ihrer Operation für ein personalisiertes Vorgespräch',
+    button: 'Kontaktieren Sie Uns',
+  },
   influencers: {
     title: 'Youtube Influencer Videos',
   },
@@ -153,5 +165,6 @@ export const de = {
     copyright: '© 2024 CevreDent Klinik. Alle Rechte vorbehalten.',
     privacy: 'Datenschutzrichtlinie',
     terms: 'Nutzungsbedingungen',
+    socialMedia: 'Unsere Sozialen Medien',
   },
 };

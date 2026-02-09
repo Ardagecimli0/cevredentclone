@@ -99,6 +99,7 @@ export const en = {
   },
   beforeAfter: {
     title: 'Before & After',
+    badge: 'Snap on Smile',
     cta: 'Get the Best Dental Treatment',
   },
   packages: {
@@ -143,6 +144,15 @@ export const en = {
   clinic: {
     title: 'Discover Our Clinic with Photos',
   },
+  discoverOur: {
+    title: 'Discover Our Clinic with Photos',
+  },
+  contactUs: {
+    title: 'Free Online Consultation',
+    subtitle: 'Virtual Consultation:',
+    description: 'Connect with us before your surgery for a personalized pre-op meeting',
+    button: 'Contact Us',
+  },
   influencers: {
     title: 'Youtube Influencer Videos',
   },
@@ -179,5 +189,6 @@ export const en = {
     copyright: '© 2024 CevreDent Clinic. All rights reserved.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
+    socialMedia: 'Our Social Media',
   },
 };

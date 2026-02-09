@@ -27,7 +27,7 @@ export const languageFlags: Record<Language, string> = {
 export const localizedSlugs: Record<Language, string> = {
   en: 'dental-implant-turkey',
   fr: 'implant-dentaire-en-turquie',
-  de: 'zahnimplantat-tuerkei',
+  de: 'zahnimplantat-in-der-turkei',
   es: 'implante-dental-turquia',
   tr: 'dis-implanti-turkiye',
   ru: 'zubnoy-implant-turtsiya',

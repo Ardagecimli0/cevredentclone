@@ -80,7 +80,7 @@ const BeforeAfter = () => {
                     />
                     {/* Overlay with Logo/Branding matching reference */}
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-4 flex justify-between items-end">
-                      <span className="text-white font-semibold text-sm">Snap on Smile</span>
+                      <span className="text-white font-semibold text-sm">{t('beforeAfter.badge')}</span>
                       <span className="text-white/80 text-xs">CevreDent</span>
                     </div>
                   </div>

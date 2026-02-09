@@ -63,16 +63,19 @@ export const fr = {
     },
     hollywoodSmile: {
       title: 'Sourire Hollywood',
-      description: 'Vivez une transformation de sourire avec nos techniques avancées et notre expertise. Profitez d\'un processus de récupération fluide et confortable.',
+      subtitle: 'Nos Forfaits Sourire Hollywood :',
+      items: ['Facettes Porcelaine', 'Facettes Laminées', 'Blanchiment Dentaire', 'Esthétique des Gencives'],
     },
     restorativeDentistry: {
       title: 'Dentisterie Restauratrice',
-      description: 'Que vous ayez besoin d\'implants dentaires, de couronnes, de bridges ou d\'autres procédures restauratrices, nous offrons des solutions complètes avec des résultats naturels.',
+      subtitle: 'Nos Solutions Restauratrices :',
+      items: ['Bridges Dentaires', 'Obturations Porcelaine', 'Obturations Composites', 'Attachements de Précision'],
     },
     getMoreInfo: 'Plus d\'Informations',
   },
   beforeAfter: {
     title: 'Avant & Après',
+    badge: 'Sourire Instantané',
     cta: 'Obtenez le Meilleur Traitement Dentaire',
   },
   packages: {
@@ -117,6 +120,15 @@ export const fr = {
   clinic: {
     title: 'Découvrez Notre Clinique en Photos',
   },
+  discoverOur: {
+    title: 'Découvrez Notre Clinique en Photos',
+  },
+  contactUs: {
+    title: 'Consultation en Ligne Gratuite',
+    subtitle: 'Consultation Virtuelle :',
+    description: 'Connectez-vous avec nous avant votre chirurgie pour une réunion pré-opératoire personnalisée',
+    button: 'Contactez-Nous',
+  },
   influencers: {
     title: 'Vidéos d\'Influenceurs Youtube',
   },
@@ -153,5 +165,6 @@ export const fr = {
     copyright: '© 2024 Clinique CevreDent. Tous droits réservés.',
     privacy: 'Politique de Confidentialité',
     terms: 'Conditions d\'Utilisation',
+    socialMedia: 'Nos Médias Sociaux',
   },
 };
