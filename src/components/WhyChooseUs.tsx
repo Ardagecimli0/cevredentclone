@@ -16,13 +16,55 @@ const WhyChooseUs = () => {
   }>;
 
   const [loading, setLoading] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
 
   // Initial state is empty to allow IP-based detection in CountrySelect
   const [formCountry, setFormCountry] = useState('');
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value = e.target.value.replace(/\D/g, ''); // Kural 1: Sadece rakamlar
+
+    // Kural 2: Başındaki 0'ı sil
+    if (value.startsWith('0')) {
+      value = value.substring(1);
+    }
+
+    // Kural 3: Türkiye (+90) seçili ise '5' ile başlamasını zorunlu tut
+    if (formCountry === '+90' && value.length > 0 && value[0] !== '5') {
+      return; // 5 ile başlamıyorsa girişi reddet
+    }
+
+    // Kural 4: Türkiye formatı için 10 hane sınırı
+    if (formCountry === '+90' && value.length > 10) {
+      value = value.substring(0, 10);
+    }
+
+    setFormData({ ...formData, phone: value });
+
+    // Görsel Geri Bildirim: TR için 10 haneden azsa hata göster
+    if (formCountry === '+90') {
+      setPhoneError(value.length > 0 && value.length < 10);
+    } else {
+      setPhoneError(value.length > 0 && value.length < 7); // Diğer ülkeler için min 7 hane
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Geçerli numara kontrolü (Validation)
+    const isTurkey = formCountry === '+90';
+    const phoneLength = formData.phone.length;
+    const isValid = isTurkey ? phoneLength === 10 : (phoneLength >= 7 && phoneLength <= 15);
+
+    if (!isValid) {
+      setPhoneError(true);
+      alert(t('promo.invalidPhone'));
+      return;
+    }
+
     setLoading(true);
+    // ... rest of the code
 
     try {
       // Prepare the data to send to the API
@@ -153,8 +195,8 @@ const WhyChooseUs = () => {
                   type="tel"
                   placeholder=""
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="h-12 bg-white border-border flex-1"
+                  onChange={handlePhoneChange}
+                  className={`h-12 bg-white border-border flex-1 transition-colors ${phoneError ? 'border-red-500 focus-visible:ring-red-500' : ''}`}
                   required
                 />
               </div>

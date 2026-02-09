@@ -20,6 +20,7 @@ export const en = {
     name: 'Name & Surname',
     email: 'Email (optional)',
     sending: 'Sending...',
+    invalidPhone: 'Please enter a valid phone number.',
     cta: 'Hurry Up! Get A Free Quote',
   },
   whyChoose: {

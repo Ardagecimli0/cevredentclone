@@ -20,6 +20,7 @@ export const de = {
     name: 'Vor- und Nachname',
     email: 'E-Mail (optional)',
     sending: 'Wird gesendet...',
+    invalidPhone: 'Bitte geben Sie eine gültige Telefonnummer ein.',
     cta: 'Beeilen Sie sich! Kostenloses Angebot',
   },
   whyChoose: {

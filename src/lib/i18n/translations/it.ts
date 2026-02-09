@@ -20,6 +20,7 @@ export const it = {
     name: 'Nome e Cognome',
     email: 'Email (opzionale)',
     sending: 'Invio in corso...',
+    invalidPhone: 'Inserisci un numero di telefono valido.',
     cta: 'Affrettati! Ottieni un Preventivo Gratuito',
   },
   whyChoose: {

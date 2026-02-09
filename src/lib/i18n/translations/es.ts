@@ -20,6 +20,7 @@ export const es = {
     name: 'Nombre y Apellido',
     email: 'Correo electrónico (opcional)',
     sending: 'Enviando...',
+    invalidPhone: 'Por favor, introduce un número de teléfono válido.',
     cta: '¡Date Prisa! Obtén un Presupuesto Gratis',
   },
   whyChoose: {

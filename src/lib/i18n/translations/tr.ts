@@ -20,6 +20,7 @@ export const tr = {
     name: 'Ad Soyad',
     email: 'E-posta (isteğe bağlı)',
     sending: 'Gönderiliyor...',
+    invalidPhone: 'Lütfen geçerli bir telefon numarası giriniz.',
     cta: 'Acele Edin! Ücretsiz Fiyat Teklifi Alın',
   },
   whyChoose: {
