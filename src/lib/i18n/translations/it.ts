@@ -53,7 +53,7 @@ export const it = {
     dentalImplants: {
       title: 'Impianti Dentali',
       subtitle: 'I Nostri Pacchetti Impianti:',
-      items: ['All On Four', 'All On Six', 'All On Eight', 'Three On Six', 'Impianto Dentale Completo'],
+      items: ['Tutto su 4 (All-on-4)', 'Tutto su 6 (All-on-6)', 'Tutto su 8 (All-on-8)', 'Tre su Sei (3-on-6)', 'Impianto Dentale Completo'],
     },
     dentalVeneers: {
       title: 'Faccette Dentali',

@@ -53,7 +53,7 @@ export const ru = {
     dentalImplants: {
       title: 'Зубные Имплантаты',
       subtitle: 'Наши Пакеты Имплантатов:',
-      items: ['All On Four', 'All On Six', 'All On Eight', 'Three On Six', 'Полная Имплантация'],
+      items: ['Всё на 4-х (All-on-4)', 'Всё на 6-ти (All-on-6)', 'Всё на 8-ми (All-on-8)', 'Три на Шести (3-on-6)', 'Полная Имплантация'],
     },
     dentalVeneers: {
       title: 'Зубные Виниры',

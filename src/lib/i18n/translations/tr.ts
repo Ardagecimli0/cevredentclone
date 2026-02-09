@@ -53,7 +53,7 @@ export const tr = {
     dentalImplants: {
       title: 'Diş İmplantları',
       subtitle: 'Diş İmplantı Paketlerimiz:',
-      items: ['All On Four', 'All On Six', 'All On Eight', 'Three On Six', 'Tam Ağız Diş İmplantı'],
+      items: ['Dörtlü İmplant (All On 4)', 'Altılı İmplant (All On 6)', 'Sekizli İmplant (All On 8)', 'Üç Üstü Altı (3 On 6)', 'Tam Ağız Diş İmplantı'],
     },
     dentalVeneers: {
       title: 'Diş Kaplamaları',
