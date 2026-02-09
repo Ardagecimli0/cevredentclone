@@ -134,7 +134,7 @@ export const de = {
     button: 'Kontaktieren Sie Uns',
   },
   influencers: {
-    title: 'Youtube Influencer Videos',
+    title: 'Youtube Influencer-Videos',
   },
   faq: {
     title: 'Häufig Gestellte Fragen',
