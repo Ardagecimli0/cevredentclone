@@ -293,6 +293,8 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, classNam
                     <ReactCountryFlag
                         countryCode={selectedCountry.code}
                         svg
+                        cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/"
+                        cdnSuffix="svg"
                         style={{
                             width: '1.5em',
                             height: '1.5em',
@@ -308,6 +310,8 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, classNam
                             <ReactCountryFlag
                                 countryCode={country.code}
                                 svg
+                                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/"
+                                cdnSuffix="svg"
                                 style={{
                                     width: '1.5em',
                                     height: '1.5em',
