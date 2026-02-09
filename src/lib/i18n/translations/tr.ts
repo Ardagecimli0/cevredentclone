@@ -17,6 +17,9 @@ export const tr = {
     title: '%20 Bahar İndirimlerini Kaçırmayın!',
     description: 'Formu doldurun ve uzmanlarımızın sorularınızı hızlıca yanıtlamasına izin verin.',
     phone: 'Telefon',
+    name: 'Ad Soyad',
+    email: 'E-posta (isteğe bağlı)',
+    sending: 'Gönderiliyor...',
     cta: 'Acele Edin! Ücretsiz Fiyat Teklifi Alın',
   },
   whyChoose: {
@@ -190,5 +193,8 @@ export const tr = {
     privacy: 'Gizlilik Politikası',
     terms: 'Kullanım Koşulları',
     socialMedia: 'Sosyal Medya Hesaplarımız',
+  },
+  site: {
+    title: 'CevreDent - Türkiye\'de Diş Kliniği',
   },
 };

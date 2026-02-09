@@ -17,6 +17,9 @@ export const en = {
     title: "Don't Miss Out on 20% Spring Discounts!",
     description: 'Complete the form and allow our experts to promptly address any questions you may have.',
     phone: 'Phone',
+    name: 'Name & Surname',
+    email: 'Email (optional)',
+    sending: 'Sending...',
     cta: 'Hurry Up! Get A Free Quote',
   },
   whyChoose: {
@@ -190,5 +193,8 @@ export const en = {
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
     socialMedia: 'Our Social Media',
+  },
+  site: {
+    title: 'CevreDent - Dental Clinic in Turkey',
   },
 };

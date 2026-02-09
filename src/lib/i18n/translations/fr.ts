@@ -17,6 +17,9 @@ export const fr = {
     title: 'Ne Manquez Pas les Réductions de Printemps de 20% !',
     description: 'Remplissez le formulaire et permettez à nos experts de répondre rapidement à toutes vos questions.',
     phone: 'Téléphone',
+    name: 'Nom et Prénom',
+    email: 'E-mail (optionnel)',
+    sending: 'Envoi en cours...',
     cta: 'Dépêchez-vous ! Obtenez un Devis Gratuit',
   },
   whyChoose: {
@@ -166,5 +169,8 @@ export const fr = {
     privacy: 'Politique de Confidentialité',
     terms: 'Conditions d\'Utilisation',
     socialMedia: 'Nos Médias Sociaux',
+  },
+  site: {
+    title: 'CevreDent - Clinique Dentaire en Turquie',
   },
 };

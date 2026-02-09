@@ -17,6 +17,9 @@ export const de = {
     title: 'Verpassen Sie nicht die 20% Frühlingsrabatte!',
     description: 'Füllen Sie das Formular aus und lassen Sie unsere Experten Ihre Fragen umgehend beantworten.',
     phone: 'Telefon',
+    name: 'Vor- und Nachname',
+    email: 'E-Mail (optional)',
+    sending: 'Wird gesendet...',
     cta: 'Beeilen Sie sich! Kostenloses Angebot',
   },
   whyChoose: {
@@ -166,5 +169,8 @@ export const de = {
     privacy: 'Datenschutzrichtlinie',
     terms: 'Nutzungsbedingungen',
     socialMedia: 'Unsere Sozialen Medien',
+  },
+  site: {
+    title: 'CevreDent - Zahnklinik in der Türkei',
   },
 };

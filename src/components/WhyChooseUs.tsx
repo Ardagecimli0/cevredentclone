@@ -139,7 +139,7 @@ const WhyChooseUs = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
                 type="text"
-                placeholder="Name & Surname"
+                placeholder={t('promo.name')}
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="h-12 bg-white border-border"
@@ -160,7 +160,7 @@ const WhyChooseUs = () => {
               </div>
               <Input
                 type="email"
-                placeholder="Mail (optional)"
+                placeholder={t('promo.email')}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="h-12 bg-white border-border"
@@ -171,7 +171,7 @@ const WhyChooseUs = () => {
                 className="w-full bg-dental-navy hover:bg-dental-navy/90 text-white h-12"
                 disabled={loading}
               >
-                {loading ? 'Sending...' : t('promo.cta')}
+                {loading ? t('promo.sending') : t('promo.cta')}
               </Button>
             </form>
           </motion.div>

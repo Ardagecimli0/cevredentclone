@@ -5,8 +5,8 @@ import { getLanguageFromSlug, defaultLanguage, type Language } from '@/lib/i18n/
 import DentalImplantPage from './DentalImplantPage';
 
 const LocalizedDentalPage = () => {
+  const { i18n, t } = useTranslation();
   const { lang, slug } = useParams<{ lang?: string; slug?: string }>();
-  const { i18n } = useTranslation();
 
   useEffect(() => {
     // If we have a language param, use it
@@ -20,6 +20,11 @@ const LocalizedDentalPage = () => {
       }
     }
   }, [lang, slug, i18n]);
+
+  useEffect(() => {
+    // Update document title based on current language
+    document.title = t('site.title', 'CevreDent');
+  }, [i18n.language, t]);
 
   // Validate the route
   if (lang && !['en', 'fr', 'de', 'es', 'tr', 'ru', 'it'].includes(lang)) {
