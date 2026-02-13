@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const WhatsAppButton = () => {
   return (
     <motion.a
-      href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+      href="https://api.whatsapp.com/send?phone=905518622525&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ delay: 1, type: 'spring' }}

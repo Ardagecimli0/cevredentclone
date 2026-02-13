@@ -158,7 +158,7 @@ export const tr = {
     button: 'Bize Ulaşın',
   },
   influencers: {
-    title: 'Youtube Fenomen Videoları',
+    title: 'Youtube Influencer Videoları',
   },
   faq: {
     title: 'Sıkça Sorulan Sorular',

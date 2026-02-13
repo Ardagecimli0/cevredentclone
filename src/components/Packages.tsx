@@ -87,7 +87,7 @@ const Packages = () => {
             className="bg-[#1e1e3f] hover:bg-[#1e1e3f]/90 text-white min-w-[200px]"
           >
             <a
-              href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+              href="https://api.whatsapp.com/send?phone=905518622525&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
             >
               {t('packages.cta')}
             </a>

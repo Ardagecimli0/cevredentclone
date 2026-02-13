@@ -38,9 +38,9 @@ const ContactUs = () => {
                                 className="bg-[#2D2D2D] hover:bg-[#1a1a1a] text-white min-w-[160px]"
                             >
                                 <a
-                                    href="https://api.whatsapp.com/send?phone=905494755287&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
+                                    href="https://api.whatsapp.com/send?phone=905518622525&text=What%20are%20the%20options%20and%20pricing%20for%20dental%20treatment"
                                 >
-                                    {t('contactUs.button', 'Contact Us')}
+                                    {t('contactUs.button', 'Contact Us Now')}
                                 </a>
                             </Button>
                         </div>
