@@ -4,7 +4,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Services from '@/components/Services';
 import ContactUs from '@/components/ContactUs';
 import DiscoverOur from '@/components/DiscoverOur';
-import Accommodation from '@/components/Accommodation';
+
 import BeforeAfter from '@/components/BeforeAfter';
 import Packages from '@/components/Packages';
 import Influencers from '@/components/Influencers';
@@ -23,7 +23,7 @@ const DentalImplantPage = () => {
         <ContactUs />
         <BeforeAfter />
         <Packages />
-        <Accommodation />
+
         <DiscoverOur />
         <ContactUs />
         <Influencers />
